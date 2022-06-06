@@ -1,0 +1,10 @@
+.hotpost {
+    display: flex;
+    flex-direction: column;
+    width: calc(33% - 20px);
+    box-shadow: 5px 5px 17px 0px rgba(0,0,0,0.49);
+    padding: 10px;
+    margin: 10px;
+    justify-content: space-between;
+}
+

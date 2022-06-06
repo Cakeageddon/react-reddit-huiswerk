@@ -1,24 +1,26 @@
 import {NavLink} from "react-router-dom";
-import {useHistory} from "react-router-dom";
 
-import './Header.css'
-
-function Header() {
+function Topmenu() {
     return (
         <nav>
             <div className="nav-container">
-                <ul>
+                <ul className="nav-links">
                     <li>
                         <NavLink to="/" exact
                                  activeClassName="active-link"
                         >Home
                         </NavLink>
                     </li>
-
                     <li>
-                        <NavLink to="/subreddit" exact
+                        <NavLink to="/subreddit/r/memes"
                                  activeClassName="active-link"
-                        >Subreddit
+                        >Memes
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/subreddit/r/news"
+                                 activeClassName="active-link"
+                        >News
                         </NavLink>
                     </li>
                 </ul>
@@ -27,4 +29,4 @@ function Header() {
     )
 }
 
-export default Header
+export default Topmenu

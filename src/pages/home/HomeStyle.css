@@ -1,0 +1,18 @@
+.background-container{
+    background-color: #FDF4F2;
+}
+
+.outer-container-hotposts {
+    width: 60%;
+    margin: auto;
+}
+
+.hotpost-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title-container {
+    text-align: center;
+    padding: 20px;
+}

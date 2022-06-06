@@ -1,0 +1,8 @@
+.headerBar {
+    background: rgb(231,97,58);
+    background: linear-gradient(90deg, rgba(231,97,58,1) 0%, rgba(221,48,56,1) 48%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
