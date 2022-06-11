@@ -12,7 +12,6 @@ function Home() {
         async function fetchHotPosts() {
             try {
                 const result = await axios.get('https://www.reddit.com/hot.json?limit=15')
-                console.log(result.data.data.children)
                 setHotPosts(result.data.data.children)
             } catch (e) {
                 console.error(e)

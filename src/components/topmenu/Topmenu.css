@@ -12,4 +12,9 @@
 
 .nav-links li {
     margin-left: 20px;
+    color: #FFFFFF;
+}
+
+.active-link {
+    color: #FFFFFF;
 }

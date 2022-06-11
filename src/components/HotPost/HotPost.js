@@ -1,5 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import Truncatenator from "../../helpers/Truncatenator";
 
 function HotPost({permalink, title, subreddit, subredditIdPrefix, comments, upvotes}) {
 
@@ -7,9 +8,9 @@ function HotPost({permalink, title, subreddit, subredditIdPrefix, comments, upvo
         <>
 
             <article className="hotpost">
-                <h4><a href={`https://www.reddit.com${permalink}`}>{title}</a></h4>
+                <h4><a href={`https://www.reddit.com${permalink}`}>{Truncatenator(title)}</a></h4>
                 <span>
-            <p><Link to={`/subreddit/r/${subreddit}`}>{subredditIdPrefix}</Link></p>
+            <p className="hotpost-subredditname"><Link to={`/subreddit/r/${subreddit}`}>{subredditIdPrefix}</Link></p>
             <p>Comments {comments} - Upvotes {upvotes}</p></span>
             </article>
         </>
