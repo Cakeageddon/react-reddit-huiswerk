@@ -27,8 +27,8 @@ function Home() {
             <div className="background-container">
                 <div className="outer-container-hotposts">
                     <div className="title-container">
-                        <h2>Hottest posts</h2>
-                        <p>on Reddit right now</p>
+                        <h1>Hottest posts</h1>
+                        <h4>on Reddit right now</h4>
                     </div>
                     <div className="hotpost-container">
                         {hotPosts && hotPosts.map((post) => {

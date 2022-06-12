@@ -6,11 +6,10 @@ function HotPost({permalink, title, subreddit, subredditIdPrefix, comments, upvo
 
     return (
         <>
-
             <article className="hotpost">
-                <h4><a href={`https://www.reddit.com${permalink}`}>{Truncatenator(title)}</a></h4>
+                <h3 className="article-title"><a href={`https://www.reddit.com${permalink}`}>{Truncatenator(title)}</a></h3>
                 <span>
-            <p className="hotpost-subredditname"><Link to={`/subreddit/r/${subreddit}`}>{subredditIdPrefix}</Link></p>
+            <p className="hotpost-subreddit"><Link to={`/subreddit/r/${subreddit}`}>{subredditIdPrefix}</Link></p>
             <p>Comments {comments} - Upvotes {upvotes}</p></span>
             </article>
         </>

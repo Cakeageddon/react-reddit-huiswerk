@@ -6,3 +6,7 @@
     align-items: center;
     padding: 20px;
 }
+
+.headerBar h1 {
+    font-size: 3em;
+}

@@ -7,19 +7,19 @@ function Topmenu() {
                 <ul className="nav-links">
                     <li>
                         <NavLink to="/" exact
-                                 activeClassName="active-link"
+                                 className="active-link"
                         >Home
                         </NavLink>
                     </li>
                     <li>
                         <NavLink to="/subreddit/r/memes"
-                                 activeClassName="active-link"
+                                 className="active-link"
                         >Memes
                         </NavLink>
                     </li>
                     <li>
                         <NavLink to="/subreddit/r/news"
-                                 activeClassName="active-link"
+                                 className="active-link"
                         >News
                         </NavLink>
                     </li>

@@ -8,13 +8,21 @@
     display: flex;
     justify-content: flex-end;
     padding: 10px;
+
 }
 
 .nav-links li {
     margin-left: 20px;
     color: #FFFFFF;
+    text-decoration: none;
+}
+
+.nav-link {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .active-link {
     color: #FFFFFF;
+    text-decoration: none;
 }

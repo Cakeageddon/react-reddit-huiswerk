@@ -6,9 +6,14 @@
     padding: 10px;
     justify-content: space-between;
     background-color: #FFFFFF;
+    min-height: 150px;
 }
 
-.hotpost-subredditname {
+.article-title a {
+    color: #292929;
+    text-decoration: none;
+}
+
+.hotpost-subreddit a {
     color: #e7613a;
 }
-
