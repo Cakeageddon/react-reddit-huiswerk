@@ -1,0 +1,53 @@
+import React, {useEffect, useState} from "react";
+import axios from 'axios';
+import HotPost from "../../components/HotPost/HotPost";
+import HeaderReddit from "../../components/HeaderReddit/HeaderReddit";
+
+
+function Home() {
+
+    const [hotPosts, setHotPosts] = useState([])
+
+    useEffect(() => {
+        async function fetchHotPosts() {
+            try {
+                const result = await axios.get('https://www.reddit.com/hot.json?limit=15')
+                setHotPosts(result.data.data.children)
+            } catch (e) {
+                console.error(e)
+            }
+        }
+
+        fetchHotPosts()
+    }, [])
+
+    return (
+        <>
+            <HeaderReddit/>
+            <div className="background-container">
+                <div className="outer-container-hotposts">
+                    <div className="title-container">
+                        <h1>Hottest posts</h1>
+                        <h4>on Reddit right now</h4>
+                    </div>
+                    <div className="hotpost-container">
+                        {hotPosts && hotPosts.map((post) => {
+                            return (
+                                <HotPost
+                                    permalink={post.data.permalink}
+                                    title={post.data.title}
+                                    subredditIdPrefix={post.data.subreddit_name_prefixed}
+                                    subreddit={post.data.subreddit}
+                                    comments={post.data.num_comments}
+                                    upvotes={post.data.ups}
+                                />
+                            )
+                        })}
+                    </div>
+                </div>
+            </div>
+        </>
+    )
+}
+
+export default Home

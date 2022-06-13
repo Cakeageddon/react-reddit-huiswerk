@@ -1,0 +1,20 @@
+.background-container{
+    background-color: #FDF4F2;
+}
+
+.outer-container-hotposts {
+    width: 80%;
+    margin: auto;
+}
+
+.hotpost-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    justify-content: center;
+}
+
+.title-container {
+    text-align: center;
+    padding: 20px;
+}
