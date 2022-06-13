@@ -25,7 +25,7 @@ function Subreddit() {
         }
 
         fetchSubreddit()
-    }, [subreddit])
+    }, [])
 
     return (
         <>
